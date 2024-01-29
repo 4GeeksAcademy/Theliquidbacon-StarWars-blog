@@ -106,7 +106,7 @@ export const Home = () => {
 		</div>
 
 		<div className="card1 container-fluid py-2">
-			<h2 className="text-danger my-2">Characters</h2>
+			<h2 className="text-warning my-2">Characters</h2>
 			<div className="card-group overflow-auto d-flex flex-row flex-nowrap">{
 				store.people.map((datos, index)=>(
 					<div className="card" style={{minHeight: "300px", minWidth: "300px"}} key={index}>
@@ -119,7 +119,7 @@ export const Home = () => {
 						</div>
 						<div className="m-3 d-flex justify-content-between">
 							<Link to={"/demo/"+ index + "/people"}>
-								<button className="btn btn-outline-primary">Learn more!</button>
+								<button className="btn btn-outline-warning">Learn more!</button>
 							</Link>
 							<button className="btn btn-outline-warning text-end" onClick={()=>actions.addFavorites(datos.name)}>
 								<i className="fa-regular fa-heart"></i>
@@ -130,7 +130,7 @@ export const Home = () => {
 			</div>
 		</div>
 		<div className="card2 container-fluid py-2">
-			<h2 className="text-danger my-2">Planets</h2>
+			<h2 className="text-warning my-2">Planets</h2>
 			<div className="card-group overflow-auto d-flex flex-row flex-nowrap">{
 				store.planets.map((datos, index)=>(
 					<div className="card" style={{minHeight: "300px", minWidth: "300px"}} key={index}>
@@ -142,7 +142,7 @@ export const Home = () => {
 						</div>
 						<div className="m-3 d-flex justify-content-between">
 							<Link to={"/demo/"+ index + "/planets"}>
-								<button className="btn btn-outline-primary">Learn more!</button>
+								<button className="btn btn-outline-warning">Learn more!</button>
 							</Link>
 							<button className="btn btn-outline-warning text-end" onClick={()=>actions.addFavorites(datos.name)}>
 								<i className="fa-regular fa-heart"></i>

@@ -20,7 +20,7 @@ export const Cards = (props) => {
                     <p className="card-text">{datos.text}</p>
 				</div>
 				<div className="m-3 d-flex justify-content-between">
-                    <button className="btn btn-outline-primary">Learn more!</button>
+                    <button className="btn btn-outline-warning">Learn more!</button>
 					<button className="btn btn-outline-warning text-end"><i className="fa-regular fa-heart"></i></button>
 				</div>
 			</div>

@@ -13,12 +13,12 @@ export const Navbar = () => {
 	}, [store.favorites.length]);
 
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar navbar-light bg-secondary mb-3">
 			<Link to="/">
 				<img className="mx-3" src={imgswars}></img>
 			</Link>
 			<div className="dropdown ml-auto mx-5">
-				<button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<button className="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					Favorites <span className="badge bg-secondary">{numFav}</span>
 				</button>
 				<ul className="dropdown-menu w-100">

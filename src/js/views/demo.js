@@ -31,17 +31,17 @@ export const Demo = () => {
 
 	return (
 		<div className="container">
-			<div className="card d-flex" style={{minHeight: "300px", minWidth: "300px"}} key={index}>
+			<div className="card d-flex bg-transparent" style={{minHeight: "300px", minWidth: "300px"}} key={index}>
 				<div className="row text-center">
 					<div className="col-auto">
 						<img className="img-fluid p-5" src={element=="people"? imgCharUrl+store[element][index].uid+".jpg":imgPlanetsUrl+store[element][index].uid+".jpg"} alt="" style={{maxWidth:"800px", maxHeight:"600px"}} />
 					</div>
 					<div className="col mt-5">
-						<h1 className="card-title">{store[element][index].name}</h1>
-						<p className="card-text mt-2 mx-5">{description}</p>
+						<h1 className="card-title text-danger">{store[element][index].name}</h1>
+						<p className="card-text mt-2 mx-5 text-danger">{description}</p>
 					</div>
 				</div>
-				<div className="card-footer bg-transparent border-danger w-100 d-flex flex-row justify-content-between px-5">
+				<div className="card-footer bg-dark border-warning w-100 d-flex flex-row justify-content-between px-5">
 					{Object.entries(titles).map(([key, value])=>(
 						<div key={key+1}>
 							<p className="fw-bold text-danger" key={key+2}>{key}</p>
